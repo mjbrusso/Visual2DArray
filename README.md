@@ -2,7 +2,7 @@
 
 Esta biblioteca tem por objetivo facilitar a implementação de programas C++ para visualização e interação com arrays bidimensionais (matrizes).
 
-*Only portuguese for now :-(*
+*Only pt_BR for now :-(*
 
 	#include <visual2darray.hpp>
 
