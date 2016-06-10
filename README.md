@@ -121,3 +121,8 @@ Retorna o índice de uma coluna aleatória dentro da matriz.
 
 	g.randomValue(int inf, int sup);
 Retorna um valor inteiro aleatório entre inf e sup.
+
+
+### Exemplo
+
+![Preview](img/v2dpreview.png?raw=true "Preview")
