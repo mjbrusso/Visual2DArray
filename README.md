@@ -106,7 +106,7 @@ Executa a função *fn* cada vez que uma tecla for pressionada durante a execuç
 Retorna qual foi a última tecla pressionada. Exemplos de teclas são `Key::Left`, `Key::Up`, `Key::Down`, `Key::Right` e `Key::Space`. Esta função somente pode ser chamada dentro do evento *onKeyPressed*.
 
 	g.onStart(fn);
-Executa a função *fn* cada vez que o programa for iniciado/reiniciado. Isto ocorre ao entrar no programa, se o usuário teclar F2 ou se a função *restart()* for executada. A função deve receberá uma referência para o Visual2DArray atual e não retornará nenhum valor. Portanto ele deve ter a seguinte declaração (apenas o nome pode ser alterado): `void keyboardfn(Visual2DArray& game)`
+Executa a função *fn* cada vez que o programa for iniciado/reiniciado. Isto ocorre ao entrar no programa, se o usuário teclar F2 ou se a função *restart()* for executada. A função deve receberá uma referência para o Visual2DArray atual e não retornará nenhum valor. Portanto ele deve ter a seguinte declaração (apenas o nome pode ser alterado): `void startfn(Visual2DArray& game)`
 
 ### Sorteio aleatório
 
