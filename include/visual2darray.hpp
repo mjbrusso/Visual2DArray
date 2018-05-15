@@ -1,7 +1,7 @@
 //*************************************************************************
 // File:        visual2darray.hpp
 // Purpose:     Visual2DArray class
-// Author:      Marcos José Brusso <mjbrusso@gmail.com>
+// Author:      Marcos Josï¿½ Brusso <mjbrusso@gmail.com>
 // Created:     feb-2016
 // Copyright:   mjbrusso
 // Licence:     GNU LGPLv3
@@ -250,7 +250,7 @@ public:
         return *this;
     }
 
-    Visual2DArray&operator <<(std::ostream & (*os)(std::ostream&))  // endl
+    Visual2DArray& operator <<(std::ostream & (*os)(std::ostream&) __attribute__((unused)))  // endl
     {
         m_messageBuffer << '\n';
         return *this;

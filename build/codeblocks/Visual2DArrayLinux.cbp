@@ -48,7 +48,7 @@
 		<ExtraCommands>
 			<Add after='cp &quot;$(PROJECT_DIR)$(TARGET_OUTPUT_FILE)&quot; &quot;$(PROJECT_DIR)../../bin/linux/&quot;' />
 		</ExtraCommands>
-		<Unit filename="../../include/AbstractUI.hpp" />
+		<Unit filename="../../include/abstractui.hpp" />
 		<Unit filename="../../include/color.hpp" />
 		<Unit filename="../../include/types.hpp" />
 		<Unit filename="../../include/visual2darray.hpp" />

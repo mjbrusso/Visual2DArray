@@ -1,7 +1,7 @@
 //*************************************************************************
 // File:        visual2darray.cpp
 // Purpose:     Visual2DArray class implementation
-// Author:      Marcos José Brusso <mjbrusso@gmail.com>
+// Author:      Marcos Josï¿½ Brusso <mjbrusso@gmail.com>
 // Created:     feb-2016
 // Copyright:   mjbrusso
 // Licence:     GNU LGPLv3
@@ -83,14 +83,15 @@ void Visual2DArray::run()
 
 // Put the game to sleep for the specified number of milliseconds
 void Visual2DArray::pause(int ms)
-{
+{    
     redraw();
+//  Sleeping thread freeze the UI !!!!!!!    
 #ifdef WIN32
     Sleep(ms);
 #else
     usleep(ms*1000);
 #endif // WIN32
-    // std::this_thread::sleep_for(std::chrono::milliseconds(ms)); //  Sleeping thread freeze the UI !!!!!!!
+    // std::this_thread::sleep_for(std::chrono::milliseconds(ms)); 
 }
 
 // Close (exit) the game

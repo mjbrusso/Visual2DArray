@@ -90,7 +90,7 @@ public:
     void drawImage(void* cell, void* img);      // Draw the image @ the cell
     void drawValue(void* cell, int value);      // Display the value @ the cell
     void drawStr(void* cell, std::string &s);   // Display the text @ the cell
-    void drawMessage(std::string &str);     // Display the text @ message bar
+    void drawMessage(std::string &str);         // Display the text @ message bar
     void run();                                 // Show window and enter loop events
     void close();                               // Close window
 

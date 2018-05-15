@@ -1,7 +1,7 @@
 //*************************************************************************
 // File:        AbstractUI.hpp
 // Purpose:     User Interface Abstract Class & UIFactory definition
-// Author:      Marcos José Brusso <mjbrusso@gmail.com>
+// Author:      Marcos Josï¿½ Brusso <mjbrusso@gmail.com>
 // Created:     feb-2016
 // Copyright:   mjbrusso
 // Licence:     GNU LGPLv3
