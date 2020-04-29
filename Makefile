@@ -12,7 +12,7 @@ RCFLAGS_DEBUG =  $(RCFLAGS)
 LIBDIR_DEBUG =  $(LIBDIR)
 LIB_DEBUG = $(LIB)
 OBJDIR_DEBUG = obj/Debug
-OUT_DEBUG = bin/Debug/visual2darray.a
+OUT_DEBUG = bin/Debug/libvisual2darray.a
 
 INC_RELEASE =  $(INC)
 CFLAGS_RELEASE =  $(CFLAGS) -O2 -pedantic -Wextra -Wall -std=c++11
@@ -20,7 +20,7 @@ RCFLAGS_RELEASE =  $(RCFLAGS)
 LIBDIR_RELEASE =  $(LIBDIR)
 LIB_RELEASE = $(LIB)
 OBJDIR_RELEASE = obj/Release
-OUT_RELEASE = bin/Release/libvisual2darrayLinux.a
+OUT_RELEASE = bin/Release/libvisual2darray.a
 
 OBJ_DEBUG = $(OBJDIR_DEBUG)/FLTK_UI.o $(OBJDIR_DEBUG)/Fl_Cell.o $(OBJDIR_DEBUG)/Fl_GameWindow.o $(OBJDIR_DEBUG)/color.o $(OBJDIR_DEBUG)/visual2darray.o
 
@@ -76,7 +76,7 @@ before_release:
 	test -d obj/Release || mkdir -p obj/Release
 
 after_release: 
-	cp $(OUT_RELEASE) bin/linux
+	cp $(OUT_RELEASE) bin/
 	
 build_release: before_release out_release after_release
 
@@ -106,7 +106,7 @@ $(OBJDIR_RELEASE)/visual2darray.o: src/visual2darray.cpp include/types.hpp \
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c src/visual2darray.cpp -o $(OBJDIR_RELEASE)/visual2darray.o
 
 clean_release: 
-	rm -f $(OBJ_RELEASE) $(OUT_RELEASE)
+	rm -f $(OBJ_RELEASE) $(OUT_RELEASE) bin/visual2darray.a 
 
 .PHONY: before_build after_build before_debug after_debug clean_debug before_release after_release clean_release
 

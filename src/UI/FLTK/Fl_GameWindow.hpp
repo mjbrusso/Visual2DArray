@@ -1,7 +1,7 @@
 //*************************************************************************
 // File:        Fl_GameWindow.hpp
 // Purpose:     Fl_Window Derived Class
-// Author:      Marcos José Brusso <mjbrusso@gmail.com>
+// Author:      Marcos Josï¿½ Brusso <mjbrusso@gmail.com>
 // Created:     mar-2016
 // Copyright:   mjbrusso
 // Licence:     GNU LGPLv3
@@ -13,14 +13,14 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Double_Window.H>
 #include <string>
+#include "types.hpp"
 
-namespace visual2darray
-{
+namespace visual2darray {
 
-class Fl_GameWindow : public Fl_Double_Window
-{
+class Fl_GameWindow : public Fl_Double_Window {
 public:
-    Fl_GameWindow(int  w, int  h, const std::string &title) : Fl_Double_Window(w, h, title.c_str())
+    Fl_GameWindow(int w, int h, const std::string& title)
+        : Fl_Double_Window(w, h, title.c_str())
     {
     }
 

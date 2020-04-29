@@ -1,7 +1,7 @@
 //*************************************************************************
 // File:        color.hpp
 // Purpose:     RGB Color type
-// Author:      Marcos José Brusso <mjbrusso@gmail.com>
+// Author:      Marcos Josï¿½ Brusso <mjbrusso@gmail.com>
 // Created:     mar-2016
 // Copyright:   mjbrusso
 // Licence:     GNU LGPLv3
@@ -11,37 +11,42 @@
 #define _COLOR_HPP_INCLUDED
 
 #include <cstdint>
-#include <string>
 #include <sstream>
+#include <string>
 
-namespace visual2darray
-{
+namespace visual2darray {
 
-class Color
-{
+class Color {
 private:
-    uint8_t m_r, m_g, m_b;          // RGB values
+    uint8_t m_r, m_g, m_b; // RGB values
 
 public:
-    Color(uint8_t r, uint8_t g, uint8_t b):     // RGB 3 values constructor. Ex: Color(255, 0, 0)
-        m_r{r},
-        m_g{g},
-        m_b{b}
+    Color(uint8_t r, uint8_t g, uint8_t b)
+        : // RGB 3 values constructor. Ex: Color(255, 0, 0)
+        m_r { r }
+        , m_g { g }
+        , m_b { b }
     {
     }
 
-    Color(): Color(0, 0, 0)     // Default constructor (no arguments): ex: Color()
+    Color()
+        : Color(0, 0, 0) // Default constructor (no arguments): ex: Color()
     {
     }
 
-    Color(std::string hexcode): Color(0, 0, 0)          // HTML like hexa string. Ex: Color("#FF0000");
+    Color(std::string hexcode)
+        : Color(0, 0, 0) // HTML like hexa string. Ex: Color("#FF0000");
     {
-        int r{}, g{}, b{};
-        if(hexcode.at(0) == '#') hexcode.erase(0, 1);  // Remove the number sign
+        int r {}, g {}, b {};
+        if (hexcode.at(0) == '#')
+            hexcode.erase(0, 1); // Remove the number sign
 
-        if(hexcode.size() >= 2) std::istringstream(hexcode.substr(0, 2)) >> std::hex >> r;
-        if(hexcode.size() >= 4) std::istringstream(hexcode.substr(2, 2)) >> std::hex >> g;
-        if(hexcode.size() >= 6) std::istringstream(hexcode.substr(4, 2)) >> std::hex >> b;
+        if (hexcode.size() >= 2)
+            std::istringstream(hexcode.substr(0, 2)) >> std::hex >> r;
+        if (hexcode.size() >= 4)
+            std::istringstream(hexcode.substr(2, 2)) >> std::hex >> g;
+        if (hexcode.size() >= 6)
+            std::istringstream(hexcode.substr(4, 2)) >> std::hex >> b;
         m_r = r;
         m_g = g;
         m_b = b;
@@ -123,8 +128,8 @@ public:
     static const Color GreenYellow;
     static const Color HoneyDew;
     static const Color HotPink;
-    static const Color IndianRed ;
-    static const Color Indigo ;
+    static const Color IndianRed;
+    static const Color Indigo;
     static const Color Ivory;
     static const Color Khaki;
     static const Color Lavender;
@@ -212,7 +217,6 @@ public:
     static const Color WhiteSmoke;
     static const Color Yellow;
     static const Color YellowGreen;
-
 };
 
 }

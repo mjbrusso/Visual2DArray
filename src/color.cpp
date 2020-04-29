@@ -1,7 +1,7 @@
 //*************************************************************************
 // File:        color.hpp
 // Purpose:     RGB Color type implementation
-// Author:      Marcos José Brusso <mjbrusso@gmail.com>
+// Author:      Marcos Josï¿½ Brusso <mjbrusso@gmail.com>
 // Created:     mar-2016
 // Copyright:   mjbrusso
 // Licence:     GNU LGPLv3
@@ -9,8 +9,7 @@
 
 #include "color.hpp"
 
-namespace visual2darray
-{
+namespace visual2darray {
 
 // Colors constants definition (HTML color names): See: www.w3schools.com/colors/colors_names.asp
 const Color Color::AliceBlue(240, 248, 255);
@@ -156,4 +155,3 @@ const Color Color::Yellow(255, 255, 0);
 const Color Color::YellowGreen(154, 205, 50);
 
 }
-

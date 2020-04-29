@@ -1,7 +1,7 @@
 //*************************************************************************
 // File:        types.hpp
 // Purpose:     Auxiliary Types
-// Author:      Marcos José Brusso <mjbrusso@gmail.com>
+// Author:      Marcos Josï¿½ Brusso <mjbrusso@gmail.com>
 // Created:     feb-2016
 // Copyright:   mjbrusso
 // Licence:     GNU LGPLv3
@@ -10,12 +10,11 @@
 #ifndef _TYPES_HPP_INCLUDED
 #define _TYPES_HPP_INCLUDED
 
-#include <string>
-#include <sstream>
 #include <map>
+#include <sstream>
+#include <string>
 
-namespace visual2darray
-{
+namespace visual2darray {
 
 //class ImageType;    // Forward declaration
 //class CellType;     // Forward declaration
@@ -80,12 +79,12 @@ enum class Key {
     Num7 = 103,
     Num8 = 104,
     Num9 = 105,
-//    Multiply = 106,
-//    Add = 107,
-//    Separator = 108,
-//    Subtract = 109,
-//    Decimal = 110,
-//    Divide = 111,
+    //    Multiply = 106,
+    //    Add = 107,
+    //    Separator = 108,
+    //    Subtract = 109,
+    //    Decimal = 110,
+    //    Divide = 111,
     F1 = 112,
     F2 = 113,
     F3 = 114,
@@ -98,20 +97,19 @@ enum class Key {
     F10 = 121,
     F11 = 122,
     F12 = 123,
-//    NumLock = 144,
-//    Scroll = 145,
-//    ShiftLeft = 160,
-//    ShiftRight = 161,
-//    ControlLeft = 162,
-//    ControlRight = 163,
-//    AltLeft = 164,
-//    AltRight = 165,
-//    Windows = 91
-    Unknown=9999
+    //    NumLock = 144,
+    //    Scroll = 145,
+    //    ShiftLeft = 160,
+    //    ShiftRight = 161,
+    //    ControlLeft = 162,
+    //    ControlRight = 163,
+    //    AltLeft = 164,
+    //    AltRight = 165,
+    //    Windows = 91
+    Unknown = 9999
 };
 
-class AbstractVisual2DArray
-{
+class AbstractVisual2DArray {
 public:
     virtual int rowCount() const = 0;
     virtual int colCount() const = 0;
