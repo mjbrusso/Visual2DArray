@@ -16,9 +16,12 @@ namespace visual2darray {
 int Fl_GameWindow::handle(int event)
 {
     switch (event) {
+    case FL_SHORTCUT:
+        return 1; // eat all shortcut keys
     case FL_KEYDOWN: // A key was pressed, then notify the game
         static_cast<AbstractVisual2DArray*>(this->user_data())->notifyKeyboardEvent(flKeyCode2Key(Fl::event_key()));
     }
+
     return Fl_Window::handle(event);
 }
 
@@ -80,4 +83,5 @@ Key Fl_GameWindow::flKeyCode2Key(int keyCode)
     }
     return Key::Unknown;
 }
+
 }

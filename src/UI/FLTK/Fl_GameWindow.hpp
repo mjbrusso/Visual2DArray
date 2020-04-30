@@ -10,10 +10,10 @@
 #ifndef _FL_GAMEWINDOW_HPP_INCLUDED
 #define _FL_GAMEWINDOW_HPP_INCLUDED
 
+#include "types.hpp"
 #include <FL/Fl.H>
 #include <FL/Fl_Double_Window.H>
 #include <string>
-#include "types.hpp"
 
 namespace visual2darray {
 

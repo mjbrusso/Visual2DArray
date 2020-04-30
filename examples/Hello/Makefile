@@ -1,4 +1,4 @@
-PROJECT=first
+PROJECT=hello
 CXX=g++
 CXX_FLAGS= -Wall      \
 		  -ansi      \

@@ -1,21 +1,21 @@
 # Visual2DArray
 
-Esta biblioteca tem por objetivo facilitar a implementação de programas C++ para visualização e interação com arrays bidimensionais (matrizes).
+This library aims to help you create C ++ programs to view and interact with two-dimensional arrays (matrices), like board games.
 
 *Only pt_BR for now :-(*
 
 	#include <visual2darray.hpp>
+    using namespace visual2darray;
 
-### Definindo uma matriz
-	Visual2DArray g{n, m};
-Cria uma matriz denominada *g* com *n* linhas e *m* colunas.
+### Creating
+	Visual2DArray g{n, m}; // Create an array with n rows and m columns.
 
 ### Definindo o visual da matriz
 	g.title(string s);
-Define o título da janela do programa.
+Set window title.
 
 	g.cellSize(int w, int h);
-Define o tamanho visual de cada célula da matriz (*w*: largura, *h*: altura), em pixels.
+Set cells size (px).
 
 	g.borderSize(int w);
 Define a espessura das bordas da matriz, em pixels;
