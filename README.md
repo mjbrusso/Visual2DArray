@@ -2,6 +2,8 @@
 
 This library aims to help you create C ++ programs to view and interact with two-dimensional arrays (matrices), like board games.
 
+This is a c++ library. My Python 3 package **game2dboard** can be found [here](https://github.com/mjbrusso/game2dboard)
+
 *Only pt_BR for now :-(*
 
 	#include <visual2darray.hpp>
